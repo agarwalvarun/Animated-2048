@@ -13,9 +13,11 @@ script{
 }
 body{
     background-color: rgba(243, 215, 116, 0);
+    width: 80%;
+    margin: auto;
 }
 #main{
-	background-color: #616096;
+	background-color: #bbada0;
 	display: flex;
 	position: relative;
 	flex-wrap:wrap;
@@ -29,22 +31,26 @@ body{
 	margin-bottom: 3%;
 }
 #score{
+	width: 500px;
 	margin: auto;
 	font-weight: bold;
     font-size: 28px;
+	background: #F65E3B;
     border-radius: 3px;
+    padding: 0 20px;
     color: #f9f6f2;
 	transition: all .6s ease-in-out;
     height: 40px;
     line-height: 42px;
+    margin-bottom: 2.5%;
 }
 title{
 	color: #136877;
 }
-
-#new-game > p,#try-again,#undo,#ok{
+#new-game,#try-again,#undo,#ok{
     font-weight: bold;
     font-size: 28px;
+	background: #F65E3B;
     border-radius: 3px;
     padding: 0 20px;
     color: #f9f6f2;

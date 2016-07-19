@@ -11,7 +11,177 @@
 	font-variant: normal;
 }
 .text{
-    font-size: 55px;
     margin: 0;
-    text-transform: capitalize;
+}
+body{
+    background-color: rgba(243, 215, 116, 0);
+}
+#main{
+    background-color: #616096;
+    display: flex;
+    position: relative;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 3px;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 3%;
+}
+#score{
+    font-family: myFont;
+    margin: auto;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all .6s ease-in-out;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    border: none;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 1.5%;
+    font-size: 28px;
+
+}
+title{
+    color: #136877;
+}
+
+#new-game,#try-again,#undo,#ok{
+
+    font-family: myFont;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 3px;
+    padding: 0 20px;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    border: none;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 1.5%;
+}
+#try-again,#ok{
+    width: 200px;
+}
+#over,#invalid-undo{
+    display: block;
+    transition: all .6s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    background-color: rgba(148, 148, 148, 0.5);
+    z-index: 4;
+    overflow: hidden;
+
+}
+#over p,#invalid-undo p{
+    color: rgba(7, 4, 93,1);
+    width: 100%;
+    text-align: center;
+    padding-top: 25%;
+    vertical-align: middle;
+    line-height: 100%;
+    font-size: 28px;
+    color: white;
+}
+.tile{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(238, 228, 218, 0.35);
+    border-radius: 3px;
+    animation: appear 400ms ease 100ms;
+    animation-fill-mode: backwards;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+
+  100% {
+    opacity: 1;
+    transform: translate(100px, 100px);
+    transform: scale(1); } }
+._2{
+    background-image: url("gifs/2.gif");
+    animation: appear 400ms ease 100ms;
+    animation-fill-mode: backwards;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+}
+._4{
+    background-image: url("gifs/4.gif");
+    animation: appear 400ms ease 100ms;
+    animation-fill-mode: backwards;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+}
+._8{
+    color: #f9f6f2;
+    background: #f2b179;
+    background-image: url("gifs/8.gif");
+}
+._16{
+    color: #f9f6f2;
+    background: #f59563;
+    background-image: url("gifs/16.gif");
+
+}
+._32{
+    color: #f9f6f2;
+    background: #f67c5f;
+    background-image: url("gifs/32.gif");
+}
+._64{
+    background-image: url("gifs/64.gif");
+}
+._128{
+    background-image: url("gifs/128.gif");
+    color: #f9f6f2;
+    background: #edcf72;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286)
+    font-size: 45px;
+    background-image: url("gifs/128.gif");
+
+}
+._256{
+    color: #f9f6f2;
+    background: #edcc61;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+    font-size: 45px;
+    background-image: url("gifs/256.gif");
+
+}
+._512{
+    color: #f9f6f2;
+    background: #edc850;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+    font-size: 45px;
+    background-image: url("gifs/512.gif");
+}
+._1024{
+    color: #f9f6f2;
+    background: #edc53f;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    font-size: 35px;
+    background-image: url("gifs/1024.gif");
+
+}
+._2048{
+    color: #f9f6f2;
+    background: #edc22e;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    font-size: 35px;
+    background-image: url("gifs/2048.gif");
+}
+.tile_big{
+    color: #f9f6f2;
+    background: #3c3a32;
+    font-size: 30px;
 }
