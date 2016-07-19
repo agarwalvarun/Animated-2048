@@ -1,0 +1,17 @@
+@font-face {
+    font-family: myFont;
+    src: url(ProximaNovaSoft-Bold-webfont.ttf);
+}
+*{
+    font-family: myFont;
+	box-sizing:border-box;
+	text-align: center;
+	font-weight: bold;
+	margin: 0; 
+	font-variant: normal;
+}
+.text{
+    font-size: 55px;
+    margin: 0;
+    text-transform: capitalize;
+}
