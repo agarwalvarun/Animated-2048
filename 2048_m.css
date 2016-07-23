@@ -14,7 +14,7 @@
     margin: 0;
 }
 body{
-    background-color: rgba(243, 215, 116, 0);
+    background-image: url("background.jpg");
 }
 #main{
     background-color: #616096;
@@ -40,11 +40,11 @@ body{
     line-height: 42px;
     text-align: center;
     border: none;
-    width: 500px;
     margin: auto;
-    margin-bottom: 1.5%;
+    margin: 1.5%;
     font-size: 28px;
-
+    margin-right: 0;
+    
 }
 title{
     color: #136877;
@@ -62,10 +62,11 @@ title{
     line-height: 42px;
     text-align: center;
     border: none;
-    width: 500px;
     margin: auto;
-    margin-bottom: 1.5%;
+    margin: 1.5%;
+    margin-right: 0;
 }
+
 #try-again,#ok{
     width: 200px;
 }
