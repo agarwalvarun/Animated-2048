@@ -44,7 +44,7 @@ body{
     margin: 1.5%;
     font-size: 28px;
     margin-right: 0;
-    
+
 }
 title{
     color: #136877;
@@ -79,10 +79,9 @@ title{
     width: 100%;
     height: 0;
     text-align: center;
-    background-color: rgba(148, 148, 148, 0.5);
+    background-color: rgba(112, 156, 202, 0.5);
     z-index: 4;
     overflow: hidden;
-
 }
 #over p,#invalid-undo p{
     color: rgba(7, 4, 93,1);
